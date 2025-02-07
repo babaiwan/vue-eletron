@@ -1,4 +1,5 @@
-# ai-script-game
+# vue+eletron
+# required: node >= 15
 
 ## Project setup
 ```
@@ -7,17 +8,13 @@ npm install
 
 ### Compiles and hot-reloads for development
 ```
-npm run serve
+npm run electron:serve
 ```
 
 ### Compiles and minifies for production
 ```
-npm run build
-```
+npm run make
 
-### Lints and fixes files
-```
-npm run lint
 ```
 
 ### Customize configuration
