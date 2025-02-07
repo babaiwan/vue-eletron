@@ -5,7 +5,10 @@ module.exports = defineConfig({
   pluginOptions: {
     electronBuilder: {
       // 禁用自动安装 Vue Devtools
-      disableElectronDevtoolsInstallation: true
+      disableElectronDevtoolsInstallation: true,
+      chainWebpackMainProcess: (config) => {
+        config.output.filename('background.js');
+      }
     }
   }
 });
