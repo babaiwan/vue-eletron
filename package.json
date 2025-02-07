@@ -57,5 +57,22 @@
     "last 2 versions",
     "not dead",
     "not ie 11"
-  ]
+  ],
+  "config": {
+    "forge": {
+      "packagerConfig": {
+        "proxy": "http://127.0.0.1:7890",
+        "https-proxy": "http://127.0.0.1:7890",
+        "main": "src/background.js"
+      },
+      "makers": [
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "win32"
+          ]
+        }
+      ]
+    }
+  }
 }

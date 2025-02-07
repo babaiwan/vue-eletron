@@ -4,6 +4,7 @@ const { FuseV1Options, FuseVersion } = require('@electron/fuses');
 module.exports = {
   packagerConfig: {
     asar: true,
+    main: 'src/background.js' // 指定主入口文件路径
   },
   rebuildConfig: {},
   makers: [
